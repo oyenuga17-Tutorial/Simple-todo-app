@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Todo App</title>
+
+    <!-- font-awesome-icon -->
+    <script
+      src="https://kit.fontawesome.com/1739943f60.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet"  id="themeStyleSheet" href="./css/darkTheme.css" />
+  </head>
+  <body>
+   <div class="page">
+
+  
+    <div class="container">
+      <header class="header">
+        <h1 class="header-title">Todo</h1>
+        <button
+          class="btn header-btn"
+          title="Change theme"
+          id="theme-btn"
+          data-theme="light"
+        ></button>
+
+        <form class="input-form ">
+          <input
+            type="text"
+            class="header-input"
+            placeholder="Create a new todo..."
+            aria-label="new task description input"
+          />
+          <button type="submit" class="form-btn">Add</button>
+        </form>
+      </header>
+      <main>
+        <div class="todo-list-wrapper">
+          <ul class="todo-list">
+            <!-- <li
+              class="todo-item"
+              draggable="true"
+              id="3453555235"
+              data-complete="false"
+            >
+              <input
+                type="checkbox"
+                name="complete"
+                class="todo-item__checkbox"
+              />
+              <p class="todo-item__text">lorem ipsum</p>
+              <button class="todo-item__remove-btn btn edit-btn">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </button>
+              <button class="todo-item__remove-btn btn">
+                <img src="./images/icon-cross.svg" alt="" />
+              </button>
+            </li> -->
+            <li class="message">Tasks list is empty!</li>
+          </ul>
+
+          <div class="todo-list-info">
+            <p class="todo-count">
+              <span class="todoItems-number">0</span> items left
+            </p>
+            <button class="btn clearCompleted-btn">Clear Completed</button>
+          </div>
+        </div>
+
+        <div class="filter">
+          <button class="btn btnAll btnFilter active">All</button>
+          <button class="btn btnActive btnFilter">Active</button>
+          <button class="btn btnCompleted btnFilter">Completed</button>
+        </div>
+      </main>
+
+      <p class="instruction">Drag and drop to reorder list</p>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/oyenuga17" target="_blank">Oyenuga Seun</a>.
+    </div>
+
+    </div>
+   </div>
+   <script src="./js/app.js"></script>
+  </body>
+</html>
