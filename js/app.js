@@ -109,7 +109,7 @@ UI.todoInputForm.addEventListener("submit", (ev) => {
 const dragStartHandler = (ev) => {
   let sourceItem = ev.target.closest(".todo-item");
   const theme = localStorage.getItem("prevSetTheme");
-  // sourceItem.style.background = theme == "dark" ? "#212336" : "#e6e6e6";
+  sourceItem.style.background = theme == "dark" ? "#212336" : "#e6e6e6";
 
   ev.dataTransfer.setData("itemId", sourceItem.id);
   ev.dataTransfer.effectAllowed = "move";
